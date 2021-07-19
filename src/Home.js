@@ -12,7 +12,7 @@ function Home() {
            <h1> {user.displayName} </h1> 
            <h1>{user.uid} </h1>
            <button onClick={function(){
-            axios.get("http://localhost:5000/alive/").then(function(response){
+            axios.get("https://gentle-island-18660.herokuapp.com/api/alive/").then(function(response){
               console.log(response);
             }).catch(function(error){
               console.log(error);
